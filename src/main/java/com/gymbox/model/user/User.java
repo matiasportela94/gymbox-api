@@ -38,23 +38,23 @@ public class User {
     )
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "Email is required!")
     @Size(max = 50)
     @Email
     private String email;
 
-    @NotBlank
+    @NotBlank(message = "Password is required!")
     @Size(max = 120)
     private String password;
 
-    @NotBlank
+    @NotBlank(message = "DNI is required!")
     private Long dni;
 
-    @NotBlank
+    @NotBlank(message = "First name is required!")
     @Size(max = 120)
     private String firstName;
 
-    @NotBlank
+    @NotBlank(message = "Last name is required!")
     @Size(max = 120)
     private String lastName;
 
